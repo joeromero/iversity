@@ -11,19 +11,17 @@
           height: 100%;
           width: 100%;
           border-collapse: collapse;
-          border:1px solid black;  
-          box-shadow: 6px 6px silver;
+          border:1px solid black;
       }
-        thead.schatten
+     caption
       {
-          box-shadow: 6px 6px 6px #B0C4DE,
-               -6px 6px 6px #B0C4DE,
-                6px -6px 6px #A4A4A4,
-               -6px -6px 6px #A4A4A4;
+          margin-bottom: 25px;
+          font-family: Verdana, Geneva, sans-serif;
+          font-size: 250%;
       }
      tr.hervorhebung 
       {
-          font-family:Verdana, Helvetica, Arial;
+          font-family:Verdana, Geneva, sans-serif;
           font-size: large;
           font-weight:bold;
           color:black;
@@ -33,7 +31,6 @@
           padding: 10px;
           border: 1px solid silver;
           vertical-align: top;
-          // line-height: 200%;
       }
      td.markierung 
       {
@@ -43,7 +40,8 @@
   </head>
   <body>
     <table>
-      <thead class="schatten">
+      <caption>"XHTML 1.0 Strict"-Elemente</caption>
+      <thead>
         <tr class="hervorhebung">
           <td>Element-Tag</td>
           <td>Elementbeschreibung</td>
@@ -804,9 +802,9 @@
       <li>About.com Web Design - HTML 4.01 / XHTML 1.0 Reference: <a href="http://webdesign.about.com/od/htmltags/l/blhtmlreference_func.htm#semantic">http://webdesign.about.com/od/htmltags/l/blhtmlreference_func.htm#semantic</a></li>
       <li>HTML Color Codes: <a href="http://html-color-codes.info/color-names/">http://html-color-codes.info/color-names/</a></li>
     </ul>
-    <p><a href="http://validator.w3.org/check?uri=http%3A%2F%2Fhomeworks.cloudcontrolled.com%2FXHTML_1_0_strict-neu.xhtml&amp;charset=%28detect+automatically%29&amp;doctype=XHTML+1.0+Strict&amp;group=0"><img
+    <p><a href="http://validator.w3.org/check?uri=http%3A%2F%2Fhomeworks.cloudcontrolled.com%2FXHTML_1_0_strict.xhtml&amp;charset=%28detect+automatically%29&amp;doctype=XHTML+1.0+Strict&amp;group=0"><img
           alt="XHTML-Validator" src="http://www.w3.org/Icons/valid-xhtml10" /></a>
-      <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fhomeworks.cloudcontrolled.com%2FXHTML_1_0_strict-neu.xhtml&amp;profile=css2&amp;usermedium=all&amp;warning=2&amp;vextwarning=&amp;lang=de"><img
+      <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fhomeworks.cloudcontrolled.com%2FXHTML_1_0_strict.xhtml&amp;profile=css2&amp;usermedium=all&amp;warning=2&amp;vextwarning=&amp;lang=de"><img
           alt="CSS 2-Validator" src="http://www.w3.org/Icons/valid-css2-blue" /></a></p>
   </body>
 </html>
