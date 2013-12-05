@@ -20,6 +20,11 @@ button:active
     left: 1px;
     }
 
+input[required]:after
+	 {
+	 content:" * ";
+	 }
+
 input[type="search"], textarea 
     {
     background: #ddd;
@@ -40,7 +45,7 @@ input[type="search"]:focus, textarea:focus
 <form action="http://de.wikipedia.org/wiki/Spezial:Suche">
 <fieldset><legend>Wikipedia-Suche</legend>
 <label for="search">Mein Suchbegriff:</label>
-<input id="search" name="search" type="text" value="" /> 
+<input id="search" name="search" type="text" value="" required="required" /> 
 <button name="go" type="submit" value="Artikel">
 <p>Artikelsuche</p>
 </button>
