@@ -5,6 +5,14 @@
 <title>Wikipedia Suchformular</title>
 
 <style type="text/css">
+button
+    {
+    width: 120px;
+    height: 60px;
+    padding: 3px;
+    text-align: center;
+    }
+
 button:active
     {
     position: relative;
@@ -12,22 +20,30 @@ button:active
     left: 1px;
     }
 
-    input[type="text"], textarea {  background: #ddd;  border: 1px solid #ccc; }
+input[type="search"], textarea 
+    {
+    background: #ddd;
+    border: 1px solid #ccc;
+    }
 
-    input[type="text"]:focus, textarea:focus {  color: #000;  background: #fff;  border: 1px solid #000;  outline: 1px solid blue; }
-
+input[type="search"]:focus, textarea:focus
+    {
+    color: #000;
+    background: #fff;
+    border: 1px solid #000;
+    outline: 1px solid blue; 
+    }
 </style>
 </head>
 <body>
-<h1>Formular f&uuml;r die Suche in der Wikipedia</h1>
 <form action="http://de.wikipedia.org/wiki/Spezial:Suche">
-<fieldset><legend></legend>
-<label for="search">Mein Suchbegriff: </label>
+<fieldset><legend>Wikipedia-Suche</legend>
+<label for="search">Mein Suchbegriff:</label>
 <input id="search" type="search" value="">
-<button name="go" style="width: 120px; height: 120px; padding: 3px; text-align: center;" type="submit" value="Artikel">
+<button name="go" type="submit" value="Artikel">
 <p>Artikelsuche</p>
 </button>
-<button name="fulltext" style="width: 120px; height: 120px; padding: 3px; text-align: center;" type="submit" value="Volltext">
+<button name="fulltext" type="submit" value="Volltext">
 <p>Volltextsuche</p>
 </button>
 </fieldset>
