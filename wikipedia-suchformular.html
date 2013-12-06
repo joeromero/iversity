@@ -5,12 +5,28 @@
 <title>Wikipedia Suchformular</title>
 
 <style type="text/css">
+fieldset
+ 	 {		
+		border: 1px solid #347BEE;
+		width: 225px;
+		padding: 5px;
+	 }
+
+input
+	 {
+	 width: 217px;
+	 height: 20px;
+    margin-bottom: 5px;
+	 }
+
 button
     {
-    width: 120px;
-    height: 60px;
-    padding: 3px;
+	 background-color: ghostwhite;
+	 color: black;
+    width: 220px;
+    height: 50px;
     text-align: center;
+    margin-bottom: 5px;
     }
 
 button:active
@@ -38,19 +54,26 @@ input[type="search"]:focus, textarea:focus
     border: 1px solid #000;
     outline: 1px solid blue; 
     }
+span 
+	 {
+	 display:block;
+	 padding: 0 5px;
+	 }
+
 </style>
 </head>
 <body>
 <h1>Barrierefreies Suchformular</h1>
 <form action="http://de.wikipedia.org/wiki/Spezial:Suche">
-<fieldset><legend>Wikipedia-Suche</legend>
-<label for="search">Mein Suchbegriff:</label>
-<input id="search" name="search" type="text" value="" autocomplete="on" required="required" aria-required="true" />
+<fieldset><legend><span>Wikipedia-Suche</span></legend><br />
+<label for="search">Mein Suchbegriff:</label><br />
+<input id="search" name="search" type="text" value="" autocomplete="on" required="required" aria-required="true" /><br />
 <button name="go" type="submit" value="Artikel">
-<p>Artikelsuche</p>
+<p>Einen Wikipedia-Artikel suchen</p>
 </button>
+<br />
 <button name="fulltext" type="submit" value="Volltext">
-<p>Volltextsuche</p>
+<p>Gesamte Wikipedia durchsuchen</p>
 </button>
 </fieldset>
 </form>
