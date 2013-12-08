@@ -5,6 +5,12 @@
 <title>Wikipedia Suchformular</title>
 
 <style type="text/css">
+fieldset
+ 	 {		
+		border: 1px solid #347BEE;
+		width: 225px;
+		padding: 5px;
+	 }
 
 input
 	 {
@@ -60,16 +66,17 @@ span
 <body>
 <h1>Barrierefreies Suchformular</h1>
 <form action="http://de.wikipedia.org/wiki/Spezial:Suche">
+<fieldset><legend><span>Wikipedia-Suche</span></legend><br />
 <label for="search">Mein Suchbegriff:</label><br />
-<input id="search" name="search" type="text" value="" placeholder="Suchbegriff" pattern=".+" autocomplete="on" required="required" aria-required="true" /><br />
-<button name="go" type="submit" value="Einen Artikel suchen">
+<input id="search" name="search" type="text" value="" autocomplete="on" required="required" aria-required="true" /><br />
+<button name="go" type="submit" value="Artikel">
 <p>Suche nach einem Wikipedia-Artikel</p>
 </button>
 <br />
 <button name="fulltext" type="submit" value="Volltext">
 <p>Durchsuche gesamte Wikipedia</p>
 </button>
-
+</fieldset>
 </form>
 <p><a href="http://wave.webaim.org/report#/http%3A%2F%2Fhomeworks.cloudcontrolled.com%2Fwikipedia-suchformular.html"><img src="http://www.w3.org/WAI/wcag2AAA.gif" alt="WAI-AAA-Validierung"></a>
 <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fhomeworks.cloudcontrolled.com%2Fwikipedia-suchformular.html&profile=css2&usermedium=all&warning=2&vextwarning=&lang=de"><img alt="CSS 2-Validator" src="http://www.w3.org/Icons/valid-css2-blue" /></a></p>
